@@ -17,8 +17,8 @@ let capitalizeWord = function(word) {
     return capWord.join('');
 }
 
-const titleCased = tutorials.map((element) => {
+const titleCased = () => tutorials.map((element) => {
     return element.split(' ').map(word => capitalizeWord(word));
 });
 
-console.log(titleCased);
+console.log(Array.isArray(titleCased()));
